@@ -17,7 +17,7 @@
 │   ├── scripts/
 │   │   ├── cloud_loader.py           # The Ingestion Engine
 │   │   └── credentials_template.py   # Secure blueprint for DB access
-│   └── README.md                     # Technical documentation
+│   └── Star_schema.jpg                     # Star_schema
 ```
 
 ## 🛠️ Tech Stack
@@ -33,6 +33,8 @@ Tools: DBeaver (SQL Client), Pandas, SQLAlchemy
 
 ## ⚙️ How to Run & Deploy
 
+* You must have the **cleaned output file** generated in [Biogenesys v2.0](https://github.com/SanchezBarbara/Biogenesys-v2.0/blob/main/biogenesys_v2.0/source_dataset_link.md). This script uses `data_procesada_biogenesys_v2.csv` as its data source.
+* 
 * Prepare AWS RDS: Set up a PostgreSQL instance and ensure your IP is whitelisted in the Security Groups.
 
 * Setup Credentials: Rename credentials_template.py to credentials_bio.py and fill in your AWS Host, User, and Password.
